@@ -20,6 +20,7 @@ tests_require = [
     "requests",
     "psutil",
     "aioresponses",
+    "dummy-core",
 ]
 
 setuptools.setup(
