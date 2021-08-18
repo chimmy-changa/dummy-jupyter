@@ -23,8 +23,8 @@ tests_require = [
 ]
 
 setuptools.setup(
-    name="dummy-jupyter",
-    version="0.2.0",
+    name="dummy-jupyter-new",
+    version="0.4.0",
     url=jupyter_config["url"],
     author="The MathWorks, Inc.",
     description="MATLAB Web Desktop proxy",
