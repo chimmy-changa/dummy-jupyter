@@ -1,0 +1,9 @@
+*.egg-info/
+.eggs/
+__pycache__/
+dist/
+.venv/
+.vscode/
+htmlcov/
+.coverage
+node_modules/
