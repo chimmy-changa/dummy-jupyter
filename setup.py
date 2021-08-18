@@ -20,7 +20,6 @@ tests_require = [
     "requests",
     "psutil",
     "aioresponses",
-    "dummy-core",
 ]
 
 setuptools.setup(
@@ -30,6 +29,7 @@ setuptools.setup(
     author="The MathWorks, Inc.",
     description="MATLAB Web Desktop proxy",
     packages=setuptools.find_packages(exclude=["devel", "tests"]),
+    package_dir={"dummy-jupyter": "jupyter_matlab_proxy"},
     keywords=["Jupyter"],
     classifiers=["Framework :: Jupyter"],
     python_requires="~=3.7",

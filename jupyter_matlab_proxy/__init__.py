@@ -1,12 +1,12 @@
 # Copyright 2020-2021 The MathWorks, Inc.
 
 import inspect
-import matlab_web_desktop_proxy
 from pathlib import Path
-from matlab_web_desktop_proxy import mwi_environment_variables as mwi_env
 
 
 def _get_env(port, base_url):
+    from matlab_web_desktop_proxy import mwi_environment_variables as mwi_env
+
     return {
         mwi_env.get_env_name_app_port(): str(port),
         mwi_env.get_env_name_base_url(): f"{base_url}matlab",
@@ -16,6 +16,8 @@ def _get_env(port, base_url):
 
 
 def setup_matlab():
+    import matlab_web_desktop_proxy
+
     package_path = Path(inspect.getfile(matlab_web_desktop_proxy)).parent
     icon_path = package_path / "icons" / "matlab.svg"
 
